@@ -1,0 +1,1082 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* color: blue; */
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  /* background-color: rgb(243, 212, 243);
+  background-color: black; */
+  /* background-color: black; */
+}
+
+
+/* this is the css for the headers  */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    /* background-color: #333; */
+    color: white;
+  }
+  
+  .navbar-brand {
+    
+  }
+  .navbarName{
+    border: 2px solid white;
+    /* border-radius: 5px solid #ffff; */
+    font-size: 35px;
+    cursor: pointer;
+    color: rgb(204, 207, 198);
+    border-radius: 2px solid white;
+    font-family: monospace;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 5px;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links ul li {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle-icon {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+  }
+  .navbar-links ul li{
+    color: yellow;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+  
+  @media (max-width: 768px) {
+    .name{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .helloAgain{
+        font-size: 15px;
+        
+        font-weight: 600;
+    }
+    .hello{
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      width: 45%;
+      position: absolute;
+      top: 0px;
+      /* left: 0; */
+      right: 0;
+      background-color: #333;
+      padding: 12px 0;
+      border-radius: 10px 10px 10px 180px;
+    }
+  
+    .navbar-links.open {
+      display: flex;
+      background-color: rgb(102, 156, 226);
+      flex-direction: column;
+      z-index: 1;
+    }
+    .navbar-links.open ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .navbar-links.open ul li{
+        color: yellow;
+        text-align: center;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+  
+    .navbar-toggle {
+      display: block;
+      width: 30px;
+      
+      height: 30px;
+      color: black;
+      z-index: 1;
+    }
+    .navbar-toggle-icon{
+        width: 30px;
+        height: 30px;
+        
+    }
+  }
+  .iconUpArrow{
+  display: block;
+  width: 60px;
+  height: 30px;
+  /* background-color: #DA7C25; */
+  /* background: linear-gradient(267deg,#DA7C25 0.36%,#B923E1 102.06%); */
+  color: blue;
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  position: fixed;
+  cursor: pointer;
+  bottom: 20px;
+  right: 80px;
+  /* right: 10%; */
+  z-index: 1;
+  }
+
+
+/* homepart css is here only  */
+.FullContainer{
+  width: 90%;
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+  /* background-color: yellowgreen; */
+  margin-top: 50px;
+
+}
+.leftPart{
+  min-width: 340px;
+  max-width: 450px;
+  width: auto;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+}
+.rightPart{
+  width: 330px;
+  min-height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* margin: auto; */
+  /* background-color: yellow; */
+}
+.rightPart img{
+  /* mix-blend-mode: color-burn; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.voice{
+  width: 300px;
+  height: 200px;
+  /* background-color: aquamarine; */
+}
+.voice2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+/* this is iics wala css */
+
+.btnApply{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  margin-right: 0px;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid blue;
+  border-radius: 10px;
+ color: blue;
+}
+
+.topAbout{
+  width: 100%;
+  height: 500px;
+  height: auto;
+  /* background-color: yellowgreen; */
+  margin: auto;
+  margin-top: 100px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.leftAbout{
+  display: flex;
+  width: 450px;
+  height: 500px;
+ /* background-color: aquamarine; */
+ justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+ position: relative;
+ z-index: 1;
+}
+.inside{
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  animation: topBottomInside 1s ease-in-out infinite alternate-reverse ;
+  z-index: 1;
+}
+@keyframes topBottomInside {
+  0%{
+    top: 50px;
+    left: 200px;
+  }
+  100%{
+    top: 80px;
+    left: 200px;
+  }
+}
+.boxOverImage{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 280px;
+  left:0px;
+  border-radius: 41% 59% 23% 77% / 30% 40% 60% 70% ;
+  background-color: rgb(86, 175, 211);
+  z-index: 1;
+  
+}
+
+.collage{
+  width: 100%;
+  width: 350px;
+  height: 100%;
+  height: 350px;
+  border: 10px solid #ffff;
+  border-radius: 50%;
+  z-index: 1;
+  margin: auto;
+}
+@media only screen and (max-width: 600px){
+  .boxOverImage{
+    width: 200px;
+    height: 200px;
+  }
+  .inside{
+    width: 100px;
+    height: 150px;
+  }
+  .rightAbout{
+    width: 320px;
+    min-height: 100px;
+    /* background-color: yellow; */
+    height: auto;
+    margin: auto;
+    text-wrap: wrap;
+  }
+  .rightAbout .aboutDataTop{
+   width: 320px;
+   min-height: 400px;
+   height: auto;
+   /* background-color: red; */
+   margin: auto;
+   margin-top: 50px;
+   word-wrap: break-word;
+  }
+  .rightAbout .aboutDataTop .paras{
+    word-wrap: break-word;
+  }
+}
+.rightAbout{
+ width: 600px;
+ min-height: 100px;
+ height: auto;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ z-index: 1;
+ /* background-color: yellow; */
+ background-image: url("images/courseCard.png");
+ /* overflow: hidden; */
+ /* background-color: violet; */
+}
+.aboutDown{
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  background-color: orange;
+  top: 60px;
+  border-radius:29% 71% 17% 83% / 32% 60% 40% 68% ;
+  transform: rotate(-8deg);
+  animation: sideway 1s ease-in-out infinite alternate-reverse ;
+  animation-delay: 10s;
+}
+.down{
+  z-index: 1;
+}
+@keyframes sideway {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 120px;
+  }
+}
+.paras{
+  width: 500px;
+  height: 40%;
+  /* background-color: antiquewhite; */
+  word-spacing: 5px;
+ z-index: 1;
+ font-size: 18px;
+ /* font-family: monospace; */
+ font-weight: 300;
+}
+.aboutDataTop{
+  width: 500px;
+  height: 40%;
+  margin-top: 50px;
+  word-wrap: break-word;
+}
+
+/* this is the second third section of the about */
+
+.secondThirdAbout{
+  width: 100%;
+  height: 150px;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+.firstOneInside{
+  display: flex;
+  width: 80%;
+  height: 30%;
+  /* background-color: tomato; */
+  align-items: center;
+  justify-content: center;
+}
+.firstOneInside span{
+  color: blue;
+  font-size: 20px;
+  font-weight: 600;
+}
+.iconAbout{
+  color: navy;
+  font-size: 25px;
+}
+.aboutBtn{
+  width: 40%;
+  height: 60px;
+  background-color: blue;
+  color: #fff;
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* this is the last about section css */
+.lastAboutCont{
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: violet; */
+}
+@media only screen and (max-width: 600px){
+  .lastAboutCont{
+    /* background-color: green; */
+  }
+  .lastAboutCont .leftPort{
+    width: 340px;
+    height: 550px;
+  }
+  .leftPort .imageAbt{
+   width: 300px;
+   height: 550px;
+  }
+  .leftPort .floatingDiv{
+    width: 258px;
+    height: 350px;
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 35%;
+    left:0 ;
+    top: 0;
+  }
+  .imageOffer{
+    width: 200px;
+    height: 350px;
+  }
+}
+.leftPort{
+ width: 400px;
+ height: 550px;
+ margin: auto;
+ margin-top: 80px;
+ margin-bottom: 60px;
+ justify-content: center;
+ align-items: center;
+ border: 20px solid orange;
+ border-radius: 35%;
+ position: relative;
+ 
+ /* background-color: red; */
+}
+.floatBoxPort{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 100% 0% 67% 33% / 69% 29% 71% 31%  ;
+  transform: rotate(-270deg);
+  background-color: gray;
+  top: 50%;
+  left: 10px;
+  animation: uppp 1500ms ease-in-out infinite alternate-reverse ;
+}
+@keyframes uppp {
+  0%{
+    top: 45%;
+    left: 10px;
+  }100%{
+    top: 50%;
+    right: 30px;
+  }
+}
+.imageAbt{
+  max-width: 400px;
+  height: 550px;
+  margin: auto;
+ position: absolute;
+ left: 0px;
+ top: -20px;
+  border-radius: 35%;
+}
+.floatingDiv{
+ width: 258px;
+ height: 350px;
+ position: absolute;
+ border: 10px solid #fff;
+ border-radius: 35%;
+ left: 70%;
+ top: 25%;
+ animation: updowninf 1500ms ease-in-out infinite alternate-reverse ;
+}
+@keyframes updowninf {
+  0%{
+    top: 20%;
+  }
+  100%{
+    top: 25%;
+  }
+}
+.imageOffer{
+ max-width: 270px;
+ height: 330px;
+ border-radius: 35%;
+}
+.rightAboutPort{
+ width: 550px;
+ min-height: 400px;
+ height: auto;
+ margin: auto;
+ position: relative;
+ /* justify-content: center; */
+ /* align-items: center; */
+ /* background-color: yellow; */
+}
+.topPart{
+  position: relative;  
+}
+
+.insideLt{
+  position: absolute;
+  top: 40px;
+  width: 50px;
+  height: 30px;
+  border-radius: 0% 100% 37% 63% / 25% 83% 17% 75% ;
+  background-color: orange;
+  animation: into 1500ms ease-in-out infinite alternate-reverse ;
+}
+@keyframes into {
+  0%{
+    width: 50px;
+  }
+  100%{
+    width: 150px;
+  }
+}
+
+
+/* this is the css for the courses items css */
+
+.coursesItemsBox{
+  width: 80%;
+  min-height: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  /* background-color: lightblue; */
+}
+@media only screen and (max-width: 800px){
+  .coursesItemsBox{
+    width: 340px;
+    min-height: 600px;
+    /* background-color: goldenrod; */
+    height: auto;
+  }
+  .coursesItemsBox .itemsOneBox{
+  width: 330px;
+  height: 420px;
+  /* background-color: yellow; */
+  }
+}
+.card-body{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -420px;
+  background-color: #fff;
+  background-image: url("images/courseCard.png");
+  color: black;
+  display: flex;
+  border: 2px solid rgb(15, 241, 230);
+  border-radius: 10px;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.cardBodyData{
+ width: 80%;
+ height: 60%;
+ color: blue;
+ font-size: 25px;
+ font-weight: 400;
+ padding-left: 5px;
+ /* background-color: yellow; */
+}
+.btnCont{
+ width: 50%;
+ height: 120px;
+ position: absolute;
+ /* left: 5px; */
+ right: 5px;
+ top: 5px;
+}
+.itemsOneBox:hover .card-body{
+ bottom: 0;
+ filter: blur(0);
+ color: blue;
+}
+.itemsOneBox{
+ width: 30%;
+ height: 100%;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ /* background-color: #c7c6c6; */
+ border: 2px solid #fff;
+ overflow: hidden;
+ display: flex;
+ position: relative;
+ flex-direction: column;
+ border-radius: 10px;
+}
+.imageboxCo{
+ width: 95%;
+ height: 300px;
+ margin: auto;
+ margin-bottom: 30px;
+ display: flex;
+ /* background-color: red; */
+ justify-content: center;
+ border-radius: 10px;
+ align-items: center;
+}
+.imgCour{
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.dataCourses{
+ width: 80%;
+ height: 50px;
+ /* background-color: #5a3ed8; */
+ display: flex;
+ margin: auto;
+}
+
+/* this is the css skills theory part and skills alone */
+.skills_box{
+ width: 80%;
+ min-height: 300px;
+ height: auto;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 50px;
+ margin: auto;
+ /* background-color: yellowgreen;
+ background-image: url("images/homeAboutBgTwo.png"); */
+ /* overflow: hidden; */
+ text-wrap: pretty;
+}
+.leftOneSkills,.rightoneSkills{
+  max-width: 400px;
+  width: 340px;
+  min-height: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-wrap: pretty;
+  margin-left: 10px;
+  /* background-color: blueviolet; */
+  
+}
+
+
+/* this is the contact page css section here  */
+
+.contactSubCont{
+  width: 80%;
+  min-height: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  gap: 20px;
+  /* background-color: aqua; */
+}
+@media only screen and (max-width: 800px){
+  .contactSubCont{
+    width: 340px;
+    min-height: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .contactSubCont .uptopcont{
+    width: 330px;
+    min-height: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    overflow: hidden;
+  }
+  .leftSideCont{
+  width: 340px;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center;
+ align-items: center; */
+
+ position: relative;
+  }
+  .contactSubCont .rightSideCont{
+    width: 320px;
+    height: 400px;
+    /* background-color: greenyellow; */
+  }
+  .formBox{
+    width: 300px;
+    height: 300px;
+    /* background-color: greenyellow; */
+  }
+  .formBox .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    padding-left: 14px;
+    background-color: rgb(128, 238, 241);
+    margin: auto;
+    color: black;
+  }
+}
+.uptopcont{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(211, 205, 205);
+  margin: auto;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.leftSideCont{
+ width: 80%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center;
+ align-items: center; */
+
+ position: relative;
+}
+.imgBoxCont{
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.boxOther{
+  width: 90%;
+  height: 60px;
+  background-color: #fff;
+  border-left: 10px solid aquamarine;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  margin-bottom: 50px;
+}
+.imgFloat{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+}
+.four{
+  margin-left: 10px;
+  z-index: 1;
+}
+.one{
+  /* left: -10px; */
+  margin-left: 30px;
+  z-index: 1;
+}
+
+
+.three{
+  margin-left: -10px;
+  z-index: 1;
+}
+.two{
+  margin-left: -10px;
+  z-index: 1;
+}
+.rightSideCont{
+ width: 40%;
+ height: 100%;
+ justify-content: center;
+ align-items: center;
+ /* background-color: yellowgreen; */
+ /* background-color: #fff; */
+}
+.formBox{
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.name{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 5px 5px 5px 15px;
+  background-color: rgb(211, 205, 205);
+  outline: #5a3ed8;
+  /* margin-bottom: 20px; */
+}
+
+.textArea{
+  width: 100%;
+  background-color: rgb(211, 205, 205);
+  margin-top: 20px;
+  padding: 5px 5px 5px 15px;
+  outline: #5a3ed8;
+}
+.btn{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  gap: 20px;
+  background-color:#5a3ed8 ;
+  border-radius: 30px;
+  color: #ffffff;   
+  outline: none;
+}
+
+/* this is the last top home difficult section of the part all its css is here only */
+.homeLastBox{
+  flex-wrap: wrap;
+  gap: 190px;
+  background-color: #fff;
+  background-image: url("images/homeAboutBg.png");
+  position: relative;
+  z-index: -1;
+}
+.boxFade{
+  position: absolute;
+  width: 90%;
+  height: 450px;
+  background-color: rgb(236, 99, 49);
+  animation: fadeinout 4000ms ease-in  infinite   ;
+}
+@keyframes fadeinout {
+  0%{
+ width: 90%;
+ left: 0;
+ /* left: -10%; */
+ opacity: 0;
+  }
+  20%{
+    left: 0%;
+    
+    opacity: 0;
+  }
+  40%{
+    left: 7%;
+    
+    opacity: 0;
+  }
+  60%{
+    left: 7%;
+    opacity: 0;
+  }
+  80%{
+    left: 7%;
+    opacity: 1;
+  }
+  90%{
+    left: 7%;
+    opacity: 1;
+  }
+  95%{
+    height: 0;
+    opacity: 0;
+    left: 5%;
+  }
+  100%{
+    height: 0;
+    opacity: 0;
+    left: 0;
+  }
+
+}
+@media only screen and (max-width: 900px){
+  .left{
+    width: 50%;
+    /* margin-top: 500px; */
+    margin-bottom: 200px;
+  }
+ .downDataHome{
+  display: none;
+ }
+ .boxFade{
+  width: 200px;
+  height: 800px;
+  margin: auto;
+ }
+ .topdataFade{
+  width: 200px;
+  height: 800px;
+ }
+ .right{
+  width: 340px;
+  min-height: 550px;
+  height: auto;
+ }
+ .right .hexagon{
+  width: 300px;
+  height: 550px;
+  left: -90%;
+ }
+ .hexagon .imgHomeTop{
+  width: 300px;
+  height: 550px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+ }
+ .left .actionHomeBtn{
+  bottom: -50%;
+  
+ }
+ .navLi{
+  width: 150px;
+ }
+}
+.topdataFade{
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 450px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(211, 205, 203);
+  top: 0;
+  animation: fadeinout 3000ms ease-in  infinite   ;
+}
+.downDataHome{
+  bottom: -55%;
+  /* left: 0; */
+  animation: fadeleftIn 3000ms ease-in 2s infinite   ;
+}
+@keyframes fadeleftIn {
+  0%{
+    left: -10%;
+    opacity: 0;
+  }25%{
+    left: 0%;
+    opacity: 0;
+  }
+  50%{
+  left: 12%;
+  opacity: 1;
+  }
+  75%{
+    left: 12%;
+    opacity: 1;
+  }
+  100%{
+    left: 12%;
+    opacity: 1;
+  }
+}
+.actionHomeBtn{
+  position: absolute;
+  bottom: -85%;
+  animation: fadetopdown 4000ms ease-in 2s infinite   ;
+}
+@keyframes fadetopdown {
+  0%{
+    opacity: 0;
+  }20%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }60%{
+    opacity: 1;
+  }80%{
+    opacity: 1;
+  }100%{
+    opacity: 1;
+  }
+}
+.navLi{
+  outline: none;
+}
+.btnHomeNav{
+  border: 1px solid blue;
+  cursor: pointer;
+}
+
+
+
+.footerCont{
+  background: linear-gradient(90deg, rgba(218,212,219,1) 0%, rgba(129,187,234,1) 0%, rgba(166,206,233,1) 0%, rgba(238,231,238,1) 96%);
+  position: relative;
+  width: 100%;
+  min-height: 130px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/* footer css has been done above  */
