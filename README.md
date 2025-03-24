@@ -1,3 +1,35 @@
+        Description of the Portfolio website : 
+1.Welcome to my portfolio website, a passionate software developer with expertise in full-stack development and Web3 technologies. This website showcases my skills, educational background, projects, and contact details.
+
+2.🛠️ Tech Stack & Skills Used :-
+
+A.Frontend: HTML5, CSS3, JavaScript, React.js, Tailwind CSS, Bootstrap
+
+B.Backend: Node.js, Express.js
+
+C.Databases: MongoDB (NoSQL), Oracle (SQL)
+
+D.Version Control: Git & GitHub
+
+3.How to Run This Project Locally:-
+
+a.Clone the repository:
+  git clone https://github.com/shivam19575/PortFolio.git
+
+b.Navigate to the project folder:
+  cd portfolio-website
+
+c.Install dependencies:
+  npm install
+
+d.Run the project:
+  npm run dev
+
+
+
+         Decription about the usage of React + Typescript + vite :- 
+
+         
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
